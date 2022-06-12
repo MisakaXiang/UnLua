@@ -30,6 +30,10 @@ function M:ReceiveBeginPlay()
     Screen.Print(msg)
 end
 
+local function V_Press()
+    Screen.Print(string.format("V pressed"))
+end
+
 local function SetupKeyBindings()
     local key_names = {
         -- 字母
@@ -49,7 +53,16 @@ local function SetupKeyBindings()
             Screen.Print(string.format("按下了%s", key.KeyName))
         end
     end
+
+    M["C_Pressed"] = function(self, key)
+        Screen.Print(string.format("C pressed"))
+    end
+
+    M['V_Pressed'] = V_Press
+
 end
+
+
 
 local function SetupAxisBindings()
     -- ProjectSettings -> Engine - Input -> Axis Mappings
@@ -67,5 +80,9 @@ end
 
 SetupKeyBindings()
 SetupAxisBindings()
+
+function M:One_Pressed()
+    Screen.Print(string.format("One pressed"))
+end
 
 return M

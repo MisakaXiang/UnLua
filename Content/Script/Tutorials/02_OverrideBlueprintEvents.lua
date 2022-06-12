@@ -28,6 +28,7 @@ function M:ReceiveBeginPlay()
 end
 
 function M:SayHi(name)
+    -- 调用被覆盖的蓝图SayHi函数，返回的是一个字符串
     local origin = self.Overridden.SayHi(self, name)
     return origin .. "\n\n" ..
         [[现在我们已经相互熟悉了，这是来自Lua的问候。

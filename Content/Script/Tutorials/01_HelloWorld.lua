@@ -16,7 +16,7 @@ function M:Initialize()
     local msg = [[
     Hello World!
 
-    —— 本示例来自 "Content/Script/Tutorials/01_HelloWorld.lua"
+    —— "Content/Script/Tutorials/01_HelloWorld.lua"
     ]]
     print(msg)
     Screen.Print(msg)

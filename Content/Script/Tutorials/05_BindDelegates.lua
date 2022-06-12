@@ -3,6 +3,7 @@
 
     小提示：
     绑定/解绑成对出现，是编写代码的良好习惯
+    本脚本由 "Content/Tutorials/05_BindDelegates/UMG_BindDelegates" 的UMG蓝图绑定
 ]]--
 
 require "UnLua"

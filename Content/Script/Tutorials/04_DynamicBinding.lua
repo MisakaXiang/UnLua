@@ -28,6 +28,7 @@ function M:ReceiveBeginPlay()
     Screen.Print(msg)
 end
 
+-- self.SpawnClass, self.SpawnPointActor, self.WidgetClass是在关卡蓝图里设置好的变量
 function M:LeftMouseButton_Pressed()
     local World = self:GetWorld()
     local SpawnClass = self.SpawnClass
